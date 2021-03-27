@@ -1,0 +1,69 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home.css' %}" type="text/css">
+    <script src="https://kit.fontawesome.com/bad733c527.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+      	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+
+        <div class="container-fluid">
+
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+              <!--  Code for the hamburger icon-->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+              <a class="navbar-brand" href="{% url 'home' %}"><font color="#F05E23">Eventbrite</font></a>
+          </div>
+
+          <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><input type="text" class="no-outline" placeholder="Enter Something"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<h2>Events</h2>
+<a href="{% url 'enter' %}" id = "ad"><i class="fas fa-plus fa-2x"></i></a>
+        {% for pos in data %}
+        <div class ='cont'>
+      <div class="card" style="width: 70rem; height: 60rem">
+        <img src="{{ MEDIA_URL }}{{ pos.img }}" width= '300px' height = '150px'>
+  <div class="card-b">
+    <h5 class="card-t">{{pos.event_name}}</h5>
+    <p class="card-te">{{pos.time}}, {{pos.location}}</p>
+    <p>{{pos.date}}</p>
+    <form method="POST" action="{% url 'home' %}">
+      {% csrf_token %}
+      {% if pos.is_liked %}
+      <a href="#" id = "li"><i id = "btn"  class="fas fa-heart fa-lg"></i><button class="bon" type="submit"></button></a>
+      <input type="hidden" name="title" value="{{pos.event_name}}"/>
+      <input type="hidden" name="bool" value="{{pos.is_liked}}"/>
+      {% else %}
+      <a href="#" id = "li1"><i id = "btn1"  class="far fa-heart fa-lg"></i><button class="bon" type="submit"></button></a>
+      <input type="hidden" name="title" value="{{pos.event_name}}"/>
+      <input type="hidden" name="bool" value="{{pos.is_liked}}"/>
+      {% endif %}
+    </form>
+  </div>
+</div></div>
+
+        {% endfor %}
+
+
+</body>
+</html>

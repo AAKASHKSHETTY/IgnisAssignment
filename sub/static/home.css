@@ -1,0 +1,87 @@
+h2{
+    margin-top: 100px;
+    margin-left: 350px;
+    width: 550px;
+}
+.cont{
+    margin-bottom: -450px;
+}
+.card {
+    margin-top: 40px;
+  margin-left: 400px;
+  width: 550px;
+}
+.card-b{
+  margin-left: 320px;
+  margin-top: -150px;
+}
+
+li{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        width: 500px;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: rgb(34,34,34);
+        color: white;
+      }
+input:focus{
+  outline: none;
+}
+
+.bon{
+    border-radius: 50%;
+    background-color: transparent;
+    height: 50px;
+    border-color: black;
+    width: 55px;
+    margin-top: -34px;
+    margin-left: 401px;
+}
+
+
+a {
+    color: black;
+}
+.bon:hover{
+    color: #f50057;
+}
+
+#li i{
+  margin-top: 40px;
+  margin-left: 419px;
+  transition: .4s;
+}
+
+#li1 i{
+  margin-top: 10px;
+  margin-left: 419px;
+  transition: .4s;
+}
+
+.fas {
+  color: #f50057;
+  transition: .4s;
+}
+
+#li:hover i{
+  color: #f50057;
+}
+
+#li1:hover i{
+  color: #f50057;
+}
+
+#ad i{
+  margin-left: 520px;
+  margin-top: -40px;
+}
+
+#ad:hover i{
+  color: black;
+}

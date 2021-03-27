@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+</head>
+<body>
+<form method="POST" action="{% url 'enter' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+  <label >Event Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label>Date:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+    <label>Time:</label><br>
+  <input type="text" id="time" name="time" value=""><br><br>
+       <label>location:</label><br>
+  <input type="text" id="loc" name="loc" value=""><br><br>
+    <input type = "file" placeholder = "pictures" name = "pictures" />
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
