@@ -6,8 +6,8 @@ Screenshot of Event Page
 
 Screenshot of database
 
-Screenshot 2021-03-27 at 11.08.13 PM![image](https://user-images.githubusercontent.com/58876667/112729756-c7ad1a00-8f53-11eb-8354-000671b6587f.png)
+![image](https://user-images.githubusercontent.com/58876667/112729756-c7ad1a00-8f53-11eb-8354-000671b6587f.png)
 
 Screenshot of Add Event page
 
-Screenshot 2021-03-27 at 11.09.53 PM![image](https://user-images.githubusercontent.com/58876667/112729767-d4ca0900-8f53-11eb-9daa-23f120fb2fde.png)
+![image](https://user-images.githubusercontent.com/58876667/112729767-d4ca0900-8f53-11eb-9daa-23f120fb2fde.png)
