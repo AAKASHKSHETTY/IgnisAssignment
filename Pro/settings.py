@@ -25,7 +25,7 @@ SECRET_KEY = 'pxxocq+zas^(hy9v2y_r$!vw$t%^sm$9w(9xy=jnb-b1=ny4x6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1',"ignishost.herokuapp.com/"]
 
 
 # Application definition
